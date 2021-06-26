@@ -1,0 +1,35 @@
+// Variables
+
+$background-image: linear-gradient(to bottom, #b068e9, #6463e7);
+$box-background-color: #ffffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: $background-image;
+  height: 100vh;
+}
+
+.container {
+  width: 950px;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: $box-background-color;
+  display: flex;
+  height: 509px;
+
+  .logo {
+    width: 50%;
+    background-image: url(../images/illustration-woman-online-desktop.svg);
+  }
+
+  .faqs {
+    width: 50%;
+  }
+}
