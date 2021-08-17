@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 // Variables
 
 $background-image: linear-gradient(to bottom, #b068e9, #6463e7);
@@ -12,6 +13,7 @@ $box-background-color: #ffffff;
 body {
   background-image: $background-image;
   height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container {
@@ -30,6 +32,13 @@ body {
   }
 
   .faqs {
+    margin-top: 65px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 32px;
+    }
   }
 }

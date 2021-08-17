@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,6 +10,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b068e9), to(#6463e7));
   background-image: linear-gradient(to bottom, #b068e9, #6463e7);
   height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container {
@@ -30,5 +32,17 @@ body {
 }
 
 .container .faqs {
+  margin-top: 65px;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .faqs h1 {
+  font-size: 32px;
 }
