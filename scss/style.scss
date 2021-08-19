@@ -40,5 +40,15 @@ body {
     h1 {
       font-size: 32px;
     }
+
+    .faq-entry {
+      position: relative;
+
+      img.arrow {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+      }
+    }
   }
 }

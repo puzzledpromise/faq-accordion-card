@@ -46,3 +46,13 @@ body {
 .container .faqs h1 {
   font-size: 32px;
 }
+
+.container .faqs .faq-entry {
+  position: relative;
+}
+
+.container .faqs .faq-entry img.arrow {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
