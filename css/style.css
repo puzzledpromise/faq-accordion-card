@@ -14,16 +14,16 @@ body {
 }
 
 .container {
-  width: 950px;
-  margin-top: 130px;
+  width: 59.375rem;
+  margin-top: 8.125rem;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 509px;
+  height: 31.8125rem;
 }
 
 .container .logo {
@@ -32,7 +32,6 @@ body {
 }
 
 .container .faqs {
-  margin-top: 65px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,18 +40,46 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 15px;
 }
 
 .container .faqs h1 {
-  font-size: 32px;
+  margin-top: 65px;
+  margin-bottom: 45px;
+  font-size: 2rem;
 }
 
 .container .faqs .faq-entry {
   position: relative;
+  margin-right: 95px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8ea;
 }
 
 .container .faqs .faq-entry img.arrow {
   position: absolute;
-  right: 10px;
-  top: 0px;
+  right: 0.625rem;
+  top: 22px;
+}
+
+.container .faqs .faq-entry .question {
+  color: #4b4c5f;
+}
+
+.container .faqs .faq-entry .question.selected {
+  color: #1e1f36;
+  font-weight: 700;
+}
+
+.container .faqs .faq-entry .answer {
+  display: none;
+}
+
+.container .faqs .faq-entry .answer.selected {
+  display: block;
+  margin-top: 11px;
+  color: #787887;
 }

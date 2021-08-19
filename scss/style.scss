@@ -3,6 +3,10 @@
 
 $background-image: linear-gradient(to bottom, #b068e9, #6463e7);
 $box-background-color: #ffffff;
+$line-color: #e8e8ea;
+$question-color: #4b4c5f;
+$selected-question-color: #1e1f36;
+$answer-color: #787887;
 
 * {
   box-sizing: border-box;
@@ -17,14 +21,14 @@ body {
 }
 
 .container {
-  width: 950px;
-  margin-top: 130px;
+  width: 59.375rem;
+  margin-top: 8.125rem;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: $box-background-color;
   display: flex;
-  height: 509px;
+  height: 31.8125rem;
 
   .logo {
     width: 50%;
@@ -32,22 +36,48 @@ body {
   }
 
   .faqs {
-    margin-top: 65px;
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
 
     h1 {
-      font-size: 32px;
+      margin-top: 65px;
+      margin-bottom: 45px;
+      font-size: 2rem;
     }
 
     .faq-entry {
       position: relative;
+      margin-right: 95px;
+      font-size: 14px;
+      font-weight: 400;
+      padding-top: 18px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $line-color;
 
       img.arrow {
         position: absolute;
-        right: 10px;
-        top: 0px;
+        right: 0.625rem;
+        top: 22px;
+      }
+
+      .question {
+        color: $question-color;
+      }
+
+      .question.selected {
+        color: $selected-question-color;
+        font-weight: 700;
+      }
+      .answer {
+        display: none;
+      }
+
+      .answer.selected {
+        display: block;
+        margin-top: 11px;
+        color: $answer-color;
       }
     }
   }
