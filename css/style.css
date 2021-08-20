@@ -63,6 +63,13 @@ body {
   position: absolute;
   right: 0.625rem;
   top: 22px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.container .faqs .faq-entry img.arrow.selected {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .container .faqs .faq-entry .question {
